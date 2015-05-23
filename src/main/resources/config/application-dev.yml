@@ -7,10 +7,10 @@ spring:
     datasource:
         dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
         url: jdbc:mysql://localhost:3306/awareness
-        databaseName: awareness
-        serverName:
+        databaseName: 
+        serverName: 
         username: root
-        password: bamboo11
+        password: 
         cachePrepStmts: true
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
