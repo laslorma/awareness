@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "baseName": "awareness",
+    "packageName": "com.catwizard.awareness",
+    "packageFolder": "com/catwizard/awareness",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useCompass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "7",
+    "rememberMeKey": "ffb5dfab5bd18a295a32f01bade4f8535d82dc79"
+  }
+}
