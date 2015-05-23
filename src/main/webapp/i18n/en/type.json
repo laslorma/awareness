@@ -1,0 +1,19 @@
+{
+    "awarenessApp": {
+        "type" : {
+            "home": {
+                "title": "Types",
+                "createLabel": "Create a new Type",
+                "createOrEditLabel": "Create or edit a Type"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Type {{ id }}?"
+            },
+            "detail": {
+                "title": "Type"
+            },
+            "name": "Name",
+            "habit": "habit"
+        }
+    }
+}
