@@ -1,0 +1,20 @@
+{
+    "awarenessApp": {
+        "frequency" : {
+            "home": {
+                "title": "Frequencys",
+                "createLabel": "Créer un nouveau Frequency",
+                "createOrEditLabel": "Créer ou éditer un Frequency"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Frequency {{ id }} ?"
+            },
+            "detail": {
+                "title": "Frequency"
+            },
+            "name": "Name",
+            "habit": "habit"
+        }
+    }
+}
+

@@ -14,14 +14,14 @@ async:
     queueCapacity: 10000
 
 mail:
-    host: localhost
+    host: smtp.gmail.com
     port: 25
-    username:
-    password:
+    username: poolebu@gmail.com
+    password: jodete11
     protocol: smtp
-    tls: false
-    auth: false
-    from: awareness@localhost
+    tls: true
+    auth: true
+    from: poolebu@gmail.com
 
 
 swagger:
