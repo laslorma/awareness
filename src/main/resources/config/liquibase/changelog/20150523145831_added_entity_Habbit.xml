@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Habbit.
+    -->
+    <changeSet id="20150523145831" author="jhipster">
+        <createTable tableName="HABBIT">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="description" type="varchar(255)"/>
+            <column name="type" type="varchar(255)"/>
+            <column name="frequency" type="varchar(255)"/>
+            <column name="user_id" type="bigint"/>
+        </createTable>
+        
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="HABBIT"
+                                 constraintName="fk_habbit_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="JHI_USER"/>
+
+    </changeSet>
+</databaseChangeLog>

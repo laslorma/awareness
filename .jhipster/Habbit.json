@@ -1,0 +1,53 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "relationshipNameCapitalized": "User",
+            "relationshipFieldName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "User",
+            "otherEntityField": "firstName"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "type",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Type",
+            "fieldNameUnderscored": "type",
+            "fieldInJavaBeanMethod": "Type",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "frequency",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Frequency",
+            "fieldNameUnderscored": "frequency",
+            "fieldInJavaBeanMethod": "Frequency",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150523145831",
+    "pagination": "infinite-scroll",
+    "validation": false
+}

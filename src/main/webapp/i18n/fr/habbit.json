@@ -1,0 +1,22 @@
+{
+    "awarenessApp": {
+        "habbit" : {
+            "home": {
+                "title": "Habbits",
+                "createLabel": "Créer un nouveau Habbit",
+                "createOrEditLabel": "Créer ou éditer un Habbit"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Habbit {{ id }} ?"
+            },
+            "detail": {
+                "title": "Habbit"
+            },
+            "description": "Description",
+            "type": "Type",
+            "frequency": "Frequency",
+            "user": "user"
+        }
+    }
+}
+
