@@ -8,6 +8,7 @@
                 "main": "Entities",
                 "frequency": "Frequency",
                 "type": "Type",
+                "habit": "Habit",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

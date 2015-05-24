@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Habit.
+    -->
+    <changeSet id="20150524124219" author="jhipster">
+        <createTable tableName="HABIT">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="description" type="varchar(255)"/>
+            <column name="frequency_id" type="bigint"/>
+            <column name="type_id" type="bigint"/>
+            <column name="user_id" type="bigint"/>
+        </createTable>
+        
+        <addForeignKeyConstraint baseColumnNames="frequency_id"
+                                 baseTableName="HABIT"
+                                 constraintName="fk_habit_frequency_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="FREQUENCY"/>
+
+        <addForeignKeyConstraint baseColumnNames="type_id"
+                                 baseTableName="HABIT"
+                                 constraintName="fk_habit_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="TYPE"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="HABIT"
+                                 constraintName="fk_habit_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="JHI_USER"/>
+
+    </changeSet>
+</databaseChangeLog>

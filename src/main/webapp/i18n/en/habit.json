@@ -1,0 +1,23 @@
+{
+    "awarenessApp": {
+        "habit" : {
+            "home": {
+                "title": "Habits",
+                "createLabel": "Create a new Habit",
+                "createOrEditLabel": "Create or edit a Habit"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Habit {{ id }}?"
+            },
+            "detail": {
+                "title": "Habit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "frequency": "frequency",
+            "type": "type",
+            "measurement": "measurement",
+            "user": "user"
+        }
+    }
+}

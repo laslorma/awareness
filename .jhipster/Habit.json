@@ -1,0 +1,76 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "frequency",
+            "relationshipNameCapitalized": "Frequency",
+            "relationshipFieldName": "frequency",
+            "otherEntityName": "frequency",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Frequency",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "type",
+            "relationshipNameCapitalized": "Type",
+            "relationshipFieldName": "type",
+            "otherEntityName": "type",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Type",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "measurement",
+            "relationshipNameCapitalized": "Measurement",
+            "relationshipFieldName": "measurement",
+            "otherEntityName": "measurement",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Measurement"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "user",
+            "relationshipNameCapitalized": "User",
+            "relationshipFieldName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "User",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name",
+            "fieldInJavaBeanMethod": "Name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150524124219",
+    "pagination": "pager",
+    "validation": true
+}
