@@ -1,0 +1,50 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "habit",
+            "relationshipNameCapitalized": "Habit",
+            "relationshipFieldName": "habit",
+            "otherEntityName": "habit",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Habit",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "value",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Value",
+            "fieldNameUnderscored": "value",
+            "fieldInJavaBeanMethod": "Value",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "Date",
+            "fieldNameUnderscored": "date",
+            "fieldInJavaBeanMethod": "Date",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150524124433",
+    "pagination": "pager",
+    "validation": true
+}

@@ -1,0 +1,21 @@
+{
+    "awarenessApp": {
+        "measurement" : {
+            "home": {
+                "title": "Measurements",
+                "createLabel": "Créer un nouveau Measurement",
+                "createOrEditLabel": "Créer ou éditer un Measurement"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Measurement {{ id }} ?"
+            },
+            "detail": {
+                "title": "Measurement"
+            },
+            "value": "Value",
+            "date": "Date",
+            "habit": "habit"
+        }
+    }
+}
+
