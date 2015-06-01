@@ -371,6 +371,17 @@
                 <!--This plugin's configuration is used to store Eclipse m2e settings
                 only. It has no influence on the Maven build itself.-->
                 <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.3</version>
+                        <configuration>
+                          <verbose>true</verbose>
+                          <fork>true</fork>
+                          <executable>/usr/lib/jvm/java-7-openjdk-amd64/bin/javac</executable>
+                          <compilerVersion>1.7</compilerVersion>
+                        </configuration>
+                      </plugin>
+                <plugin>
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
                     <version>1.0.0</version>
@@ -566,7 +577,6 @@
             <id>dev</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
-                <jdk>1.7.0_79</jdk>
             </activation>
             <properties>
                 <!-- log configuration -->
