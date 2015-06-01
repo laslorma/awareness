@@ -566,7 +566,7 @@
             <id>dev</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
-                <jdk>1.7</jdk>
+                <jdk>1.7.0_79</jdk>
             </activation>
             <properties>
                 <!-- log configuration -->
