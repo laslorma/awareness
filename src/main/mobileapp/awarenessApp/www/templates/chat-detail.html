@@ -5,10 +5,32 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
-  </ion-content>
+    <ion-content class="padding">
+        <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+        <p>
+            {{chat.lastText}}
+        </p>
+        <br>
+
+        <br>
+        <p>
+            <button class="button icon ion-minus-round" on-touch="substractToCounter()"></button>
+            <button class="button button-balanced">
+                {{counter}}
+            </button>
+            <button class="button icon ion-plus-round" on-touch="addToCounter()"></button>
+        </p>
+        <br>
+
+
+        <div class="list" ng-repeat="entry in historyArray">
+            <div class="item item-divider">
+                {{entry.date | date:'hh-mm-ss'}}
+            </div>
+            <div class="item">
+                {{entry.counter}}
+            </div>
+        </div>
+
+    </ion-content>
 </ion-view>
