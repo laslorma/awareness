@@ -16,7 +16,7 @@
         <p>
             <button class="button icon ion-minus-round" on-touch="substractToCounter()"></button>
             <button class="button button-balanced">
-                {{counter}}
+                {{historyArray.length}}
             </button>
             <button class="button icon ion-plus-round" on-touch="addToCounter()"></button>
         </p>
@@ -24,11 +24,9 @@
 
 
         <div class="list" ng-repeat="entry in historyArray">
-            <div class="item item-divider">
-                {{entry.date | date:'hh-mm-ss'}}
-            </div>
+
             <div class="item">
-                {{entry.counter}}
+                date: {{entry  | date:'medium'}}
             </div>
         </div>
 
